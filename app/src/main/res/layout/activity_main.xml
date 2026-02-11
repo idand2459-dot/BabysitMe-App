@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="#F0F9FF">
+
+    <ImageView
+        android:id="@+id/imgWelcome"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/baby_dog_logo"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="הרשמה למערכת Babysitme"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:layout_marginBottom="25dp"/>
+
+    <EditText
+        android:id="@+id/etFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="שם מלא"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/etFacebookLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="קישור לפרופיל פייסבוק"
+        android:layout_marginTop="15dp"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="textUri"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="בחר סיסמה (לפחות 6 תווים)"
+        android:layout_marginTop="15dp"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="אני רוצה להירשם כ:"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#333333"/>
+
+    <RadioGroup
+        android:id="@+id/rgUserRole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp">
+
+        <RadioButton
+            android:id="@+id/rbSeeker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="לקוח (מחפש עובד)"
+            android:checked="true"
+            android:layout_marginEnd="15dp"/>
+
+        <RadioButton
+            android:id="@+id/rbProvider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="עובד (מציע שירות)"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnUploadID"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="העלה סלפי עם תעודת זהות"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FF9800"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="סיום הרשמה"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#4CAF50"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/tvGoToLogin"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="כבר רשום? התחבר כאן"
+        android:textColor="#1A237E"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false" />
+
+</LinearLayout>

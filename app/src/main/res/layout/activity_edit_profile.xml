@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFFFFF">
+
+    <Button
+        android:id="@+id/btnLogout"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="התנתק"
+        android:textColor="#F44336"
+        android:textStyle="bold"
+        android:layout_gravity="left" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="השלמת פרופיל עובד"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:layout_marginBottom="20dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/ivProfilePicture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_camera"
+                android:background="#E0E0E0" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnSelectImage"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="בחר תמונת פרופיל"
+            android:textColor="#1A237E"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="מספר טלפון (לווטסאפ)"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:textDirection="rtl"
+            android:textAlignment="viewStart"
+            android:background="@android:drawable/editbox_background" />
+
+        <EditText
+            android:id="@+id/etExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="שנות ניסיון (מספר)"
+            android:inputType="number"
+            android:layout_marginTop="15dp"
+            android:padding="12dp"
+            android:textDirection="rtl"
+            android:textAlignment="viewStart"
+            android:background="@android:drawable/editbox_background" />
+
+        <EditText
+            android:id="@+id/etPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="מחיר מבוקש לשעה"
+            android:inputType="number"
+            android:layout_marginTop="15dp"
+            android:padding="12dp"
+            android:textDirection="rtl"
+            android:textAlignment="viewStart"
+            android:background="@android:drawable/editbox_background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="מה השירות שאתה מציע?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="right" />
+
+        <RadioGroup
+            android:id="@+id/rgServiceType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/rbBabysitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="בייביסיטר"
+                android:layout_marginEnd="20dp" />
+
+            <RadioButton
+                android:id="@+id/rbDogwalker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="דוג-ווקר" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etBio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ספר על הניסיון שלך (תיאור בעברית)"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:layout_marginTop="15dp"
+            android:padding="12dp"
+            android:textDirection="rtl"
+            android:textAlignment="viewStart"
+            android:gravity="top|start"
+            android:background="@android:drawable/editbox_background" />
+
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="שמור ושלח לאישור מנהל"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#4CAF50"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

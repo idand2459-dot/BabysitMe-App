@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "507411447041",
+    "project_id": "babysiteme-project-2026",
+    "storage_bucket": "babysiteme-project-2026.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507411447041:android:f6c8d87238558cfeed6f00",
+        "android_client_info": {
+          "package_name": "com.example.babysitme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtpSL1XMYv7nMi_5Bk4ZjsPP54ZlhS4lY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
